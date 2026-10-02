@@ -1,0 +1,52 @@
+/* =====================================================
+   Vista Productos — Bodega & Administración
+   ===================================================== */
+
+.toolbar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.table-container {
+  overflow-x: auto;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--clr-border);
+}
+
+.product-sku {
+  font-family: 'Courier New', monospace;
+  font-size: 0.8rem;
+  color: var(--clr-accent-hover);
+  background: var(--clr-accent-light);
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+
+.stock-low    { color: var(--clr-danger);  font-weight: 700; }
+.stock-ok     { color: var(--clr-success); font-weight: 700; }
+.stock-medium { color: var(--clr-warning); font-weight: 700; }
+
+.action-buttons { display: flex; gap: 8px; }
+
+/* ---- Formulario Modal ---- */
+.modal-form { display: flex; flex-direction: column; gap: 16px; }
+.modal-form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.modal-actions { display: flex; gap: 12px; justify-content: flex-end; margin-top: 8px; }
+
+/* ---- Empty State ---- */
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 64px 24px;
+  gap: 12px;
+  color: var(--clr-text-muted);
+  text-align: center;
+}
+.empty-state-icon { font-size: 3rem; }
+.empty-state-title { font-size: 1rem; font-weight: 600; color: var(--clr-text-secondary); }
+.empty-state-desc  { font-size: 0.825rem; }
